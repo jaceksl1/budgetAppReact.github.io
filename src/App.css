@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 70.5%;
+}
+
+.container {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container::after {
+  content: "";
+  background: url(https://w0.peakpx.com/wallpaper/955/523/HD-wallpaper-money-angel-billetes-books-cars-dinero-dollar-newspaper-rich-stacks.jpg)
+    no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-size: cover;
+
+  height: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.app-wrapper {
+  width: 80%;
+  border-radius: 0.5rem;
+  box-shadow: 2rem 10rem 10rem 5rem rgba(0, 0, 0, 0.9);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -306px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -709px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px -20px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.header h1 {
+  font-size: 4vw;
+  font-weight: 300;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
+
+.balance {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.balance h2 {
+  margin-top: 2%;
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
+
+.balance h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+  border-bottom: 2px solid;
+}
+
+.income-expense {
+  display: flex;
+  justify-content: space-around;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+  text-align: center;
+  margin: 10px auto;
+  width: 80%;
+}
+
+.form-wrapper {
+  margin: 0 auto;
+  max-width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.5rem solid gray;
+  border-right: 0.5rem solid gray;
+  border-top: 0.5rem solid gray;
+  border-left: 0.5rem solid gray;
+  padding: 5vw;
+  margin-bottom: 2%;
+}
+
+.input-group input:not([type="submit"]) {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  border: none;
+  background: transparent;
+  border-bottom: 0.2rem solid #777;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  font-family: "Baloo Da 2", serif;
+  font-size: 1.8rem;
+  outline: none;
+}
+
+.input-group button {
+  width: 15rem;
+  padding: 0.7rem;
+  border: none;
+  outline: none;
+  border-radius: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin: 0 auto;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.list-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.transactions h2 {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.transactions-income .transaction {
+  background-color: grey;
+  margin: 20px 0;
+}
+
+.transactions-expense .transaction {
+  background-color: grey;
+  margin: 20px 0;
+}
+
+.transaction-text {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  padding: 0.2vw;
+  border: none;
+  outline: none;
+  border-radius: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10vw 0 0 0;
+  font-size: 2vw;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -306px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -709px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px -20px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+footer p {
+  text-align: center;
+  color: black;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
+
+#myForm {
+  margin: 0 auto;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.contact-links > a {
+  margin-top: 30px;
+  color: white;
+  font-size: 1.5vw;
+  text-decoration: none;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
