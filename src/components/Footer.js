@@ -7,14 +7,14 @@ function Footer() {
       <div className="contact-links">
         <a
           href="https://www.linkedin.com/in/jacek-s%C5%82omian-759171b9/"
-          target="_blank"
+          target="_blank" rel="noreferrer"
           className="btn contact-details">
           <i class="fab fa-facebook-square"></i> LinkedIn
         </a>
         <a
           id="profile-link"
           href="https://github.com/jaceksl1"
-          target="_blank"
+          target="_blank" rel="noreferrer"
           className="btn contact-details">
           <i className="fab fa-github"></i> GitHub
         </a>
