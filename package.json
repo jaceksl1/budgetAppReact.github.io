@@ -2,7 +2,7 @@
   "name": "budget-app-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jaceksl1.github.io/BudgetApp-React",
+  "homepage": ".",
   "dependencies": {
     "-": "0.0.1",
     "@testing-library/jest-dom": "^5.14.1",
@@ -15,8 +15,6 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
