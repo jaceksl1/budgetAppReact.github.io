@@ -1,4 +1,4 @@
-export default function (state, action) {
+export default function case (state, action) {
   switch (action.type) {
     case "ADD_INCOME":
       return {
