@@ -85,7 +85,7 @@ const AddTransaction = () => {
             autoComplete="off"
             onChange={onChangeIncome}
           />
-          <button type="submit" value="Submit">
+          <button className="btn-income" type="submit" value="Submit">
             Add income
           </button>
         </div>
@@ -108,7 +108,7 @@ const AddTransaction = () => {
             autoComplete="off"
             onChange={onChangeExpense}
           />
-          <button type="submit" value="Submit">
+          <button className="btn-expense" type="submit" value="Submit">
             Add expense
           </button>
         </div>

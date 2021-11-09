@@ -17,7 +17,7 @@ const ExpenseTransaction = ({ expenseTransaction }) => {
       <div className="btn-wrapper">
         <button
           onClick={() => deleteTransaction(expenseTransaction.id)}
-          className="btn">
+          className="btn-del-expense">
           Delete
         </button>
       </div>
